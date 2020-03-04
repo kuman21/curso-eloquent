@@ -7,6 +7,6 @@ use Faker\Generator as Faker;
 
 $factory->define(Image::class, function (Faker $faker) {
     return [
-        //
+        'url' => 'https://picsum.photos/1024/1024'
     ];
 });

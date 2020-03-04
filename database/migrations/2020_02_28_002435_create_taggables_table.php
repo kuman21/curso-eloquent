@@ -19,8 +19,6 @@ class CreateTaggablesTable extends Migration
 
             $table->morphs('taggable');
 
-            $table->timestamps();
-
             $table->foreign('tag_id')->references('id')->on('tags')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
